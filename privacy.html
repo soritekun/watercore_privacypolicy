@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー | WaterCore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0d0d0d;
+      --fg: #f0ece4;
+      --accent: #c8a96e;
+      --muted: #6b6560;
+      --border: rgba(200,169,110,0.2);
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 300;
+      min-height: 100vh;
+      line-height: 1.8;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 100;
+      opacity: 0.4;
+    }
+
+    header {
+      padding: 48px 64px;
+      border-bottom: 1px solid var(--border);
+      animation: fadeDown 0.8s ease both;
+    }
+
+    .logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      color: var(--fg);
+      text-decoration: none;
+    }
+
+    .logo span { color: var(--accent); }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 80px 64px 120px;
+      animation: fadeUp 1s ease 0.2s both;
+    }
+
+    .page-eyebrow {
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.8rem;
+      font-weight: 300;
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+
+    .updated {
+      font-size: 0.78rem;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      margin-bottom: 64px;
+    }
+
+    section {
+      margin-bottom: 56px;
+      padding-bottom: 56px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    section:last-child {
+      border-bottom: none;
+    }
+
+    h2 {
+      font-size: 0.68rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 0.92rem;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 16px;
+    }
+
+    ul li {
+      font-size: 0.92rem;
+      color: var(--muted);
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(200,169,110,0.08);
+      padding-left: 16px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      opacity: 0.5;
+    }
+
+    .highlight {
+      background: rgba(200,169,110,0.06);
+      border-left: 2px solid var(--accent);
+      padding: 16px 20px;
+      margin: 20px 0;
+      font-size: 0.88rem;
+      color: var(--fg);
+      opacity: 0.85;
+    }
+
+    a {
+      color: var(--fg);
+      border-bottom: 1px solid var(--border);
+      text-decoration: none;
+      transition: color 0.3s, border-color 0.3s;
+    }
+
+    a:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    footer p {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 640px) {
+      header { padding: 32px 28px; }
+      main { padding: 56px 28px 80px; }
+      footer { padding: 32px 28px; flex-direction: column; gap: 8px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="logo" href="index.html">ETIRO <span>Studio</span></a>
+  </header>
+
+  <main>
+    <p class="page-eyebrow">Legal</p>
+    <h1>プライバシーポリシー</h1>
+    <p class="updated">最終更新日：2025年5月13日</p>
+
+    <section>
+      <h2>はじめに</h2>
+      <p>ETIRO Studio（以下「当スタジオ」）は、WaterCore（以下「本アプリ」）におけるプライバシーの保護を重要と考えています。本ポリシーは、本アプリが取得する情報とその利用方法について説明します。</p>
+      <div class="highlight">
+        本アプリが取得するすべてのデータは、お使いの端末内のみで処理されます。外部サーバーへの送信や第三者への提供は一切行いません。
+      </div>
+    </section>
+
+    <section>
+      <h2>取得する情報と利用目的</h2>
+      <p>本アプリは、スクリーンタイムを視覚的に表示するために以下の権限を使用します。</p>
+      <ul>
+        <li><strong style="color: var(--fg);">PACKAGE_USAGE_STATS（使用履歴へのアクセス）</strong><br>アプリごとのスマホ利用時間を取得し、水の濁り具合として画面に表示するために使用します。</li>
+        <li><strong style="color: var(--fg);">QUERY_ALL_PACKAGES（インストール済みアプリの照会）</strong><br>SNS・動画・ゲームなどカテゴリ別に利用時間を分類して表示するために使用します。</li>
+      </ul>
+      <p>これらの情報は端末内でのみ処理され、外部には一切送信されません。</p>
+    </section>
+
+    <section>
+      <h2>データの保存と管理</h2>
+      <ul>
+        <li>取得したデータはお使いの端末内にのみ保存されます</li>
+        <li>当スタジオがデータにアクセスすることはありません</li>
+        <li>アプリを削除することで、すべてのデータが端末から削除されます</li>
+        <li>データの外部送信・共有・販売は一切行いません</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>第三者へのデータ提供</h2>
+      <p>本アプリは現在、広告SDK・アナリティクス・クラッシュレポートツールなどの第三者サービスを使用していません。ユーザーデータが第三者に提供されることはありません。</p>
+    </section>
+
+    <section>
+      <h2>お子様のプライバシー</h2>
+      <p>本アプリは13歳未満のお子様を対象としていません。13歳未満のお子様から意図的に個人情報を収集することはありません。</p>
+    </section>
+
+    <section>
+      <h2>本ポリシーの変更</h2>
+      <p>本ポリシーは必要に応じて更新されることがあります。変更があった場合は、このページに掲載の上、最終更新日を更新します。</p>
+    </section>
+
+    <section>
+      <h2>お問い合わせ</h2>
+      <p>プライバシーポリシーに関するご質問は、以下までご連絡ください。</p>
+      <p><a href="mailto:koshiro0306kosayu@gmail.com">koshiro0306kosayu@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ETIRO Studio. All rights reserved.</p>
+    <p>WaterCore</p>
+  </footer>
+
+</body>
+</html>
